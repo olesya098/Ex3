@@ -19,21 +19,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyApplicationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                Navigatia()
             }
         }
     }
-}
-
-@Composable
-fun Greeting( modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello Olesya!",
-        modifier = modifier
-    )
 }
 
